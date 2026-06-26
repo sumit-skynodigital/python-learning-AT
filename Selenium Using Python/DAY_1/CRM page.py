@@ -19,5 +19,9 @@ password.send_keys("#Skyno@123")
 button=driver.find_element(By.XPATH, "//button[@type='submit']")
 button.click()
 
+links=driver.find_elements(By.TAG_NAME, "a")   
+for i in links:
+    print("Text:",i.text)
+
 time.sleep(5)
 driver.quit()
